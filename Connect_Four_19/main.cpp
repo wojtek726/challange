@@ -25,9 +25,9 @@ int main()
         WykonajRuch();
         kto_wygral = SprawdzWygrana();
     }
-    if(kto_wygral == 1) cout << "Wygral gracz x";
-    else if(kto_wygral == 2) cout << "Wygral gracz o";
-    else if(kto_wygral == 3) cout << "Remis";
+    if(kto_wygral == 1) cout << endl << "Wygral gracz x!" << endl;
+    else if(kto_wygral == 2) cout << endl << "Wygral gracz o" << endl;
+    else if(kto_wygral == 3) cout << endl << "Remis" << endl;
     return 0;
 }
 
