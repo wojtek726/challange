@@ -120,7 +120,155 @@ int SprawdzWygrana()
     }
 
 // sprawdzanie skosow
+// skos rosnacy od lewej do prawej
+    for(int j = 0; j < 4; j++)
+    {
+        temp = plansza[3-j][j];
+        if(temp == 'x') licznik_x++;
+        else licznik_x = 0;
 
+        if(temp == 'o') licznik_o++;
+        else licznik_o = 0;
+
+        if(licznik_x == 4) return 1;
+        if(licznik_o == 4) return 2;
+    }
+    for(int j = 0; j < 5; j++)
+    {
+        temp = plansza[4-j][j];
+        if(temp == 'x') licznik_x++;
+        else licznik_x = 0;
+
+        if(temp == 'o') licznik_o++;
+        else licznik_o = 0;
+
+        if(licznik_x == 4) return 1;
+        if(licznik_o == 4) return 2;
+    }
+    for(int j = 0; j < 6; j++)
+    {
+        temp = plansza[5-j][j];
+        if(temp == 'x') licznik_x++;
+        else licznik_x = 0;
+
+        if(temp == 'o') licznik_o++;
+        else licznik_o = 0;
+
+        if(licznik_x == 4) return 1;
+        if(licznik_o == 4) return 2;
+    }
+    for(int j = 1; j < 7; j++)
+    {
+        temp = plansza[6-j][j];
+        if(temp == 'x') licznik_x++;
+        else licznik_x = 0;
+
+        if(temp == 'o') licznik_o++;
+        else licznik_o = 0;
+
+        if(licznik_x == 4) return 1;
+        if(licznik_o == 4) return 2;
+    }
+    for(int j = 2; j < 7; j++)
+    {
+        temp = plansza[7-j][j];
+        if(temp == 'x') licznik_x++;
+        else licznik_x = 0;
+
+        if(temp == 'o') licznik_o++;
+        else licznik_o = 0;
+
+        if(licznik_x == 4) return 1;
+        if(licznik_o == 4) return 2;
+    }
+    for(int j = 3; j < 7; j++)
+    {
+        temp = plansza[8-j][j];
+        if(temp == 'x') licznik_x++;
+        else licznik_x = 0;
+
+        if(temp == 'o') licznik_o++;
+        else licznik_o = 0;
+
+        if(licznik_x == 4) return 1;
+        if(licznik_o == 4) return 2;
+    }
+
+
+// skos malejacy od lewej do prawej
+
+    for(int j = 0; j < 4; j++)
+    {
+        temp = plansza[j+2][j];
+        if(temp == 'x') licznik_x++;
+        else licznik_x = 0;
+
+        if(temp == 'o') licznik_o++;
+        else licznik_o = 0;
+
+        if(licznik_x == 4) return 1;
+        if(licznik_o == 4) return 2;
+    }
+    for(int j = 0; j < 5; j++)
+    {
+        temp = plansza[j+1][j];
+        if(temp == 'x') licznik_x++;
+        else licznik_x = 0;
+
+        if(temp == 'o') licznik_o++;
+        else licznik_o = 0;
+
+        if(licznik_x == 4) return 1;
+        if(licznik_o == 4) return 2;
+    }
+    for(int j = 0; j < 6; j++)
+    {
+        temp = plansza[j][j];
+        if(temp == 'x') licznik_x++;
+        else licznik_x = 0;
+
+        if(temp == 'o') licznik_o++;
+        else licznik_o = 0;
+
+        if(licznik_x == 4) return 1;
+        if(licznik_o == 4) return 2;
+    }
+    for(int j = 0; j < 6; j++)
+    {
+        temp = plansza[j][j+1];
+        if(temp == 'x') licznik_x++;
+        else licznik_x = 0;
+
+        if(temp == 'o') licznik_o++;
+        else licznik_o = 0;
+
+        if(licznik_x == 4) return 1;
+        if(licznik_o == 4) return 2;
+    }
+    for(int j = 0; j < 5; j++)
+    {
+        temp = plansza[j][j+2];
+        if(temp == 'x') licznik_x++;
+        else licznik_x = 0;
+
+        if(temp == 'o') licznik_o++;
+        else licznik_o = 0;
+
+        if(licznik_x == 4) return 1;
+        if(licznik_o == 4) return 2;
+    }
+    for(int j = 0; j < 4; j++)
+    {
+        temp = plansza[j][j+3];
+        if(temp == 'x') licznik_x++;
+        else licznik_x = 0;
+
+        if(temp == 'o') licznik_o++;
+        else licznik_o = 0;
+
+        if(licznik_x == 4) return 1;
+        if(licznik_o == 4) return 2;
+    }
 
 
 // remis
