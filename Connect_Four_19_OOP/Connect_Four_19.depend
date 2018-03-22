@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1521579250 source:/home/wojtek/projekty/challange/Connect_Four_19/main.cpp
+	<iostream>
+
+1521734785 source:/home/wojtek/projekty/challange/Connect_Four_19_OOP/klasy.cpp
+	"klasy.h"
+
+1521735194 /home/wojtek/projekty/challange/Connect_Four_19_OOP/klasy.h
+	<iostream>
+
+1521734785 source:/home/wojtek/projekty/challange/Connect_Four_19_OOP/main.cpp
+	<iostream>
+	"klasy.h"
+

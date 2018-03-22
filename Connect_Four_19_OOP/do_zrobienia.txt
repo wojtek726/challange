@@ -1,0 +1,2 @@
+- refaktoryzacja kodu 
+- optymalizacja 
