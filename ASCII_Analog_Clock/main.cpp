@@ -1,9 +1,13 @@
-#include <iostream>
+#include "klasy.h"
 
-using namespace std;
+
+
 
 int main()
 {
-    cout << "Hello world!" << endl;
+    Plansza p1;
+    p1.Rysuj();
+
+
     return 0;
 }

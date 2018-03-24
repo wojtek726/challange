@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1521925821 source:/home/wojtek/projekty/challange/ASCII_Analog_Clock/main.cpp
+	"klasy.h"
+
+1521926070 /home/wojtek/projekty/challange/ASCII_Analog_Clock/klasy.h
+	<iostream>
+	<cstdlib>
+
+1521926070 source:/home/wojtek/projekty/challange/ASCII_Analog_Clock/klasy.cpp
+	"klasy.h"
+
