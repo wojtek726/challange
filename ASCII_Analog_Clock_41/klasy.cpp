@@ -1,5 +1,5 @@
 #include "klasy.h"
-using namespace std;
+
 
 Plansza::Plansza()
 {
@@ -89,9 +89,17 @@ void Czas::Wyswietl()
     cout << h_int << " " << m_int << " " << s_int << endl;
 }
 
-void Wskazowka::Wybierz(Plansza &p1)
+void Wskazowka::Wybierz(Plansza &p1, Czas cz)
 {
+    //if(cz.s_int == 0) for(int i = 0; i < 8; i++) p1.macierz[x_wymiar/2-i][y_wymiar/2] = znak;
+
+    //if(cz.s_int == 5)
     p1.macierz[x_wymiar/2][y_wymiar/2] = znak;
+    p1.macierz[x_wymiar/2-1][y_wymiar/2+1] = znak;
+
 }
+
+
+
 
 

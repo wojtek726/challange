@@ -17,6 +17,7 @@ using namespace std;
 
 class Plansza
 {
+    friend class Wskazowka;
     char znak = '#';
     char macierz[x_wymiar][y_wymiar];
 
@@ -47,11 +48,14 @@ public:
 
 class Wskazowka
 {
-    char znak = 'h';
+    char znak = 's';
+    int pozycja[60][12];
+
 
 public:
 
-    void Wybierz(Plansza &p1);
+    //Wskazowka();
+    void Wybierz(Plansza &p1, Czas cz);
 
 };
 

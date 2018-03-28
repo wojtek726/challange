@@ -9,14 +9,14 @@
 1521926070 source:/home/wojtek/projekty/challange/ASCII_Analog_Clock/klasy.cpp
 	"klasy.h"
 
-1521985933 source:/home/wojtek/projekty/challange/ASCII_Analog_Clock_41/klasy.cpp
+1521988562 source:/home/wojtek/projekty/challange/ASCII_Analog_Clock_41/klasy.cpp
 	"klasy.h"
 
-1521985904 /home/wojtek/projekty/challange/ASCII_Analog_Clock_41/klasy.h
+1521988544 /home/wojtek/projekty/challange/ASCII_Analog_Clock_41/klasy.h
 	<iostream>
 	<cstdlib>
 	<time.h>
 
-1521985984 source:/home/wojtek/projekty/challange/ASCII_Analog_Clock_41/main.cpp
+1521988569 source:/home/wojtek/projekty/challange/ASCII_Analog_Clock_41/main.cpp
 	"klasy.h"
 

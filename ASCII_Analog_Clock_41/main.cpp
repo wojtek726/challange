@@ -7,10 +7,10 @@ int main()
 
     Czas cz;
     cz.Pobierz();
-    cz.Wyswietl();
+    //cz.Wyswietl();
 
     Wskazowka wsk1;
-    wsk1.Wybierz(p1);
+    wsk1.Wybierz(p1,cz);
     p1.Rysuj();
 
 
