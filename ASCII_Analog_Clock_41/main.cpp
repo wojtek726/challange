@@ -3,22 +3,15 @@
 
 int main()
 {
-
+    system("resize -s 41 77");
     initscr(); //1
-//    int rzedy, kolumny;
-//    getmaxyx( stdscr, rzedy, kolumny );
-//    printw("rzedy: %d \nkolumny: %d\n", rzedy, kolumny);
-//
-//
-//    Czas cz1;
-//    cz1.Pobierz();
-//    cz1.Wyswietl();
-//
+
 
 
     Plansza p1;
-    Wskazowka wsk;
-    wsk.Rysuj(5);
+    p1.Rysuj();
+//    Wskazowka wsk;
+//    wsk.Rysuj(5);
 
 
     getch();
