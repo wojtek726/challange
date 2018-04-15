@@ -31,20 +31,7 @@ public:
 
 
 
-class Czas
-{
-    string czas, temp;
-    time_t rawtime;
-    struct tm * timeinfo;
 
-    string h_str, m_str, s_str;
-    int h_int, m_int, s_int;
-
-public:
-    void Pobierz();
-    void Wyswietl();
-
-};
 
 class Wskazowka
 {
