@@ -77,7 +77,7 @@ void Plansza::Rysuj()
         else
         {
             attron(A_BOLD);
-            mvprintw(y,x,"*");
+            mvprintw(y,x,"#");
             attroff(A_BOLD);
         }
     }
