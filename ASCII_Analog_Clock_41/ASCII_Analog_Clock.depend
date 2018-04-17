@@ -17,22 +17,22 @@
 	<cstdlib>
 	<time.h>
 
-1523827746 source:/home/wojtek/projekty/challange/ASCII_Analog_Clock_41/main.cpp
+1523990085 source:/home/wojtek/projekty/challange/ASCII_Analog_Clock_41/main.cpp
 	"czas.h"
 	"zegar.h"
 
-1523694284 source:/home/wojtek/projekty/challange/ASCII_Analog_Clock_41/czas.cpp
+1523987981 source:/home/wojtek/projekty/challange/ASCII_Analog_Clock_41/czas.cpp
 	"czas.h"
 
-1523694580 /home/wojtek/projekty/challange/ASCII_Analog_Clock_41/czas.h
+1523987981 /home/wojtek/projekty/challange/ASCII_Analog_Clock_41/czas.h
 	<stdlib.h>
 	<ncurses.h>
 	<string>
 
-1523827621 source:/home/wojtek/projekty/challange/ASCII_Analog_Clock_41/zegar.cpp
+1523990795 source:/home/wojtek/projekty/challange/ASCII_Analog_Clock_41/zegar.cpp
 	"zegar.h"
 
-1523826003 /home/wojtek/projekty/challange/ASCII_Analog_Clock_41/zegar.h
+1523990705 /home/wojtek/projekty/challange/ASCII_Analog_Clock_41/zegar.h
 	"czas.h"
 	<math.h>
 

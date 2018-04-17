@@ -8,6 +8,7 @@
 class Plansza
 {
 
+    char znak = '.';
 
 
 
@@ -16,6 +17,8 @@ public:
     void Rysuj();
 
 };
+
+
 
 class Wskazowka
 {

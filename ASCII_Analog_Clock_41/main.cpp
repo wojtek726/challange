@@ -4,18 +4,17 @@
 int main()
 {
     system("resize -s 41 77");
-    initscr(); //1
+    initscr();
 
 
 
     Plansza p1;
-    p1.Rysuj();
-//    Wskazowka wsk;
-//    wsk.Rysuj(5);
+    Wskazowka wsk;
+    wsk.Rysuj(0);
 
 
     getch();
-    endwin(); //4
+    endwin();
     return 0;
 }
 
