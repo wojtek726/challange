@@ -17,7 +17,7 @@ session_start();
         echo "Witaj ".$_SESSION['imie']." [ <a href='wyloguj.php'>WYLOGUJ</a> ]<br/><br/><br/>";
         echo "Drewno: <b>".$_SESSION['drewno']."</b> | Kamień: <b>".
                 $_SESSION['zboze']."</b> | Zboże: <b>".$_SESSION['kamien']; 
-        echo "<br/><br/>";
+        echo "</b><br/><br/>";
         
         echo "Ratusz(poziom ".$_SESSION['ratusz'].")";
         echo "<br/>Tartak(poziom ".$_SESSION['tartak'].")";

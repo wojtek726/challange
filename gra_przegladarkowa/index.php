@@ -20,9 +20,9 @@ if(isset($_SESSION['zalogowano']) && $_SESSION['zalogowano'] == true)
          <form action="zaloguj.php" method="post">
              
              Login:
-             <input type="text" name='login'><br/>
+             <input type="text" name='login' size="10"><br/>
              Hasło:
-             <input type="password" name="haslo"><br/>
+             <input type="password" name="haslo" size="10"><br/>
              
              <input type="submit" value="Zaloguj">
          </form>
