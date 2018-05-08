@@ -17,6 +17,8 @@ if(isset($_SESSION['zalogowano']) && $_SESSION['zalogowano'] == true)
      </head>
      <body>
          <font size='4'>Średniowiecze</font><br/><br/>
+         <a href="rejestracja.php">Załóż darmowe konto!</a><br/><br/>
+         
          <form action="zaloguj.php" method="post">
              
              Login:
@@ -29,7 +31,7 @@ if(isset($_SESSION['zalogowano']) && $_SESSION['zalogowano'] == true)
          
          <font size='2' color='red'>
          <?php
-         
+         //echo password_hash("asdfg", PASSWORD_DEFAULT);
          if(isset($_SESSION['blad_logowania']))
          {
              echo $_SESSION['blad_logowania'];

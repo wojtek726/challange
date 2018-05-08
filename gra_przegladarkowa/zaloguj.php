@@ -13,16 +13,17 @@ $login = $_POST['login'];
 $haslo = $_POST['haslo'];
 
 $login = htmlentities($login, ENT_QUOTES, 'UTF-8');
-$haslo = htmlentities($haslo, ENT_QUOTES, 'UTF-8');
+
 
 $sql = "SELECT * FROM uzytkownicy WHERE user='$login' AND pass='$haslo'";
-$result = $conn->query(sprintf("SELECT * FROM uzytkownicy AS u,budynki AS b,surowce AS s WHERE u.user='%s' AND u.pass='%s'",
-        mysqli_real_escape_string($conn,$login),
-        mysqli_real_escape_string($conn,$haslo)));
+$result = $conn->query(sprintf("SELECT * FROM uzytkownicy AS u,budynki AS b,surowce AS s WHERE u.user='%s'",
+        mysqli_real_escape_string($conn,$login)));
 
 if($result->num_rows > 0)
 {
     $wiersz = $result->fetch_assoc();
+    if(password_verify($haslo, $wiersz['pass']))
+    {
     $_SESSION['login'] = $wiersz['user'];
     $_SESSION['email'] = $wiersz['email'];
     $_SESSION['imie'] = $wiersz['imie'];
@@ -39,10 +40,16 @@ if($result->num_rows > 0)
     unset($_SESSION['blad_logowania']);
     $_SESSION['zalogowano'] = true;
     header("Location: gra.php");
+    }
+    else
+    {
+        $_SESSION['blad_logowania'] = "Błędne hasło";
+        header("Location: index.php");
+    }
     
 }
 else {
-    $_SESSION['blad_logowania'] = "Błędny login lub hasło";
+    $_SESSION['blad_logowania'] = "Błędny login";
     header("Location: index.php");
 }
 $conn->close();
