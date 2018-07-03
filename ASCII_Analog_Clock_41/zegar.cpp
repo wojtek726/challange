@@ -42,11 +42,11 @@ void Wskazowka::Rysuj(int ktora)
     float x, y;
     int r = 18;
     float a, b;
-//    x = r*cos(ktora*6*0.01745329)*1.92+38;
-//    y = 20-r*sin(ktora*6*0.01745329);
+    x = r*cos(ktora*6*0.01745329)*1.92+38;
+    y = 20-r*sin(ktora*6*0.01745329);
     //mvprintw(y,x,"x");
-    x = 3;
-    y = 4;
+   // x = 3;
+    //y = 4;
     b = (y-(x*2)/1)/(1-x/1);
     a = (2-b)/1;
 

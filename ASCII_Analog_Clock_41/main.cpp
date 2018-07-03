@@ -10,7 +10,7 @@ int main()
 
     Plansza p1;
     Wskazowka wsk;
-    wsk.Rysuj(0);
+    wsk.Rysuj(30);
 
 
     getch();
