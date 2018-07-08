@@ -6,13 +6,12 @@
         {
             "label": "build",
             "type": "shell",
-            "command": "g++ -g main.cpp -o IMP_Interpreter",
+            "command": "g++ -g main.cpp -o Connect_Four",
             "group": {
                 "kind": "build",
                 "isDefault": true
             },
-            "problemMatcher": "$gcc"            
-            
+            "problemMatcher":"$gcc"
         }
     ]
 }
