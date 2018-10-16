@@ -4,6 +4,6 @@ using namespace std;
 
 int main()
 {
-    cout << "Hello IMPInterpreter" << endl;
+    cout << "Hello IMPInterpreter SIEMANKO" << endl;
 }
 
