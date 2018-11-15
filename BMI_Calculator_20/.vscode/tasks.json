@@ -4,7 +4,7 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "echo",
+            "label": "BMI_Calc",
             "type": "shell",
             "command": "g++",
             "args": ["-g", "main.cpp", "-oBMI_Calc"],
