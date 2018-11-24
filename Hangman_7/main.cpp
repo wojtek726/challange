@@ -20,7 +20,7 @@ int main()
         liczba_wierszy++;
     }
 
-    cout << liczba_wierszy << endl;
+    //cout << liczba_wierszy << endl;
     plik.close();
     plik.open("przyslowia.txt", ios::in);
 
@@ -35,12 +35,12 @@ int main()
         {
 
             haslo_org = linia;
-            cout << haslo_org << endl;
+            //cout << haslo_org << endl;
         }
     } while (linia != "");
 
-    cout << random << endl;
-    cout << haslo_org.length() << endl;
+    //cout << random << endl;
+    //cout << haslo_org.length() << endl;
 
     string haslo = haslo_org;
     for (int i = 0; i < haslo.length(); i++)
@@ -126,6 +126,6 @@ int main()
         }
         cout << endl << endl << endl;
     }
-
+    cout << haslo_org << endl;
     plik.close();
 }
