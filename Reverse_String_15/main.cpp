@@ -18,7 +18,6 @@ int main()
     {            
         dlugosc_tekstu++;      
     }
-    cout << dlugosc_tekstu << endl;
 
     for(int i = 0; i < dlugosc_tekstu; i++)
     {
