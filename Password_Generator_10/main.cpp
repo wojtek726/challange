@@ -3,13 +3,14 @@
 
 using namespace std;
 
+const int wielkosc_bufora = 1024;
 
 int main()
 {
     srand(time(NULL));
     char znak;
     int dlugosc_hasla, random;
-    char haslo[1024];
+    char haslo[wielkosc_bufora];
 
     cout << "Podaj długość hasła: ";
     cin >> dlugosc_hasla;
@@ -18,8 +19,19 @@ int main()
     {
         random = rand() % 92 + 33;
         znak = random;
+        for (int j = 0; j < wielkosc_bufora; j++)
+        {
+            if(znak == haslo[i])
+            {
+                
+            }
+            else
+            {
+                haslo[i] = znak;       
+            }
+        }
         //cout << znak << endl;
-        haslo[i] = znak;
+        
     }
     cout << endl << haslo << endl;
     
