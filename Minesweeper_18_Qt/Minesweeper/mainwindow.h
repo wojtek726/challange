@@ -5,6 +5,7 @@
 #include <QPushButton>
 #include <stdlib.h>
 #include <time.h>
+#include <QMessageBox>
 
 
 namespace Ui {
@@ -21,7 +22,7 @@ public:
     QPushButton *button = new QPushButton[100];
     int ilosc_m;
     int miny[10];
-    //bool wcisniety[100];
+    bool wcisniety[100];
 
 private slots:
 
@@ -31,6 +32,10 @@ private slots:
     void licz_miny(int i);
 
     void on_b_reset_clicked();
+
+    void on_b_test_clicked();
+
+
 
 private:
     Ui::MainWindow *ui;
