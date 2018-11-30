@@ -166,7 +166,9 @@ void MainWindow::licz_miny(int i)
             QMessageBox *box = new QMessageBox();
             box->setText("BOMBA");
             if(box->exec() == QMessageBox::Ok)
-                on_b_reset_clicked();
+            {
+                pokaz_wszystko();
+            }
         }
         else
         {
@@ -200,7 +202,105 @@ void MainWindow::licz_miny(int i)
 
 }
 
-void MainWindow::on_b_test_clicked()
-{
 
+void MainWindow::pokaz_wszystko()
+{
+    for(int i = 0; i < 100; i++)
+    {
+
+        button[i].setText("0");
+
+
+//        ilosc_m = 0;
+
+//        for(int j = 0; j < 10; j++)
+//        {
+
+//            if(i <= 8 && i >= 1)
+//            {
+//                if(i+1 == miny[j]) ilosc_m++;
+//                if(i-1 == miny[j]) ilosc_m++;
+//                if(i+10 == miny[j]) ilosc_m++;
+//                if(i+11 == miny[j]) ilosc_m++;
+//                if(i+9 == miny[j]) ilosc_m++;
+//            }
+//            else if(i >= 91 && i <= 98)
+//            {
+//                if(i+1 == miny[j]) ilosc_m++;
+//                if(i-1 == miny[j]) ilosc_m++;
+//                if(i-10 == miny[j]) ilosc_m++;
+//                if(i-11 == miny[j]) ilosc_m++;
+//                if(i-9 == miny[j]) ilosc_m++;
+//            }
+//            else if(i == 0)
+//            {
+//                if(i+1 == miny[j]) ilosc_m++;
+//                if(i+11 == miny[j]) ilosc_m++;
+//                if(i+10 == miny[j]) ilosc_m++;
+//            }
+//            else if(i == 90)
+//            {
+//                if(i+1 == miny[j]) ilosc_m++;
+//                if(i-9 == miny[j]) ilosc_m++;
+//                if(i-10 == miny[j]) ilosc_m++;
+//            }
+//            else if(i == 9)
+//            {
+//                if(i-1 == miny[j]) ilosc_m++;
+//                if(i+9 == miny[j]) ilosc_m++;
+//                if(i+10 == miny[j]) ilosc_m++;
+//            }
+//            else if(i == 99)
+//            {
+//                if(i-1 == miny[j]) ilosc_m++;
+//                if(i-11 == miny[j]) ilosc_m++;
+//                if(i-10 == miny[j]) ilosc_m++;
+//            }
+//            else if(i % 10 == 0 && i != 0 && i != 90)
+//            {
+//                if(i+1 == miny[j]) ilosc_m++;
+//                if(i+10 == miny[j]) ilosc_m++;
+//                if(i-10 == miny[j]) ilosc_m++;
+//                if(i+11 == miny[j]) ilosc_m++;
+//                if(i-9 == miny[j]) ilosc_m++;
+//            }
+//            else if(i % 10 == 9 && i != 9 && i != 99)
+//            {
+//                if(i-1 == miny[j]) ilosc_m++;
+//                if(i+10 == miny[j]) ilosc_m++;
+//                if(i-10 == miny[j]) ilosc_m++;
+//                if(i-11 == miny[j]) ilosc_m++;
+//                if(i+9 == miny[j]) ilosc_m++;
+//            }
+//            else
+//            {
+//                if(i+1 == miny[j]) ilosc_m++;
+//                if(i-1 == miny[j]) ilosc_m++;
+//                if(i+10 == miny[j]) ilosc_m++;
+//                if(i-10 == miny[j]) ilosc_m++;
+//                if(i+11 == miny[j]) ilosc_m++;
+//                if(i-11 == miny[j]) ilosc_m++;
+//                if(i+9 == miny[j]) ilosc_m++;
+//                if(i-9 == miny[j]) ilosc_m++;
+//            }
+//            if(i == miny[j])
+//            {
+//                wcisniety[i] = true;
+//                button[i].setText("B");
+//            }
+//            else
+//            {
+//                button[i].setText(QString::number(ilosc_m));
+//                wcisniety[i] = true;
+//            }
+
+
+//        }
+    }
+}
+
+
+void MainWindow::on_actionZamknij_triggered()
+{
+    close();
 }

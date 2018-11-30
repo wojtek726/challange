@@ -30,12 +30,13 @@ private slots:
     void button_clicked();
     void init_planszy();
     void licz_miny(int i);
+    void pokaz_wszystko();
 
     void on_b_reset_clicked();
 
-    void on_b_test_clicked();
 
 
+    void on_actionZamknij_triggered();
 
 private:
     Ui::MainWindow *ui;
