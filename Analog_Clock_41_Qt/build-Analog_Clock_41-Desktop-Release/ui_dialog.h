@@ -26,9 +26,9 @@ public:
     {
         if (Dialog->objectName().isEmpty())
             Dialog->setObjectName(QStringLiteral("Dialog"));
-        Dialog->resize(500, 500);
+        Dialog->resize(500, 520);
         Dialog->setMinimumSize(QSize(500, 500));
-        Dialog->setMaximumSize(QSize(500, 500));
+        Dialog->setMaximumSize(QSize(500, 520));
 
         retranslateUi(Dialog);
 
