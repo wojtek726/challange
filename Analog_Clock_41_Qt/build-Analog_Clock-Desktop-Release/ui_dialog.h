@@ -26,9 +26,7 @@ public:
     {
         if (Dialog->objectName().isEmpty())
             Dialog->setObjectName(QStringLiteral("Dialog"));
-        Dialog->resize(500, 500);
-        Dialog->setMinimumSize(QSize(500, 500));
-        Dialog->setMaximumSize(QSize(500, 500));
+        Dialog->resize(400, 300);
 
         retranslateUi(Dialog);
 
@@ -37,7 +35,7 @@ public:
 
     void retranslateUi(QDialog *Dialog)
     {
-        Dialog->setWindowTitle(QApplication::translate("Dialog", "Dialog", Q_NULLPTR));
+        Dialog->setWindowTitle(QApplication::translate("Dialog", "Analog Clock", Q_NULLPTR));
     } // retranslateUi
 
 };

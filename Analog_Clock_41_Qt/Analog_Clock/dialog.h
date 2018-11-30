@@ -2,8 +2,8 @@
 #define DIALOG_H
 
 #include <QDialog>
-#include <QPaintEvent>
 #include <QPainter>
+#include <QPaintEvent>
 
 namespace Ui {
 class Dialog;
@@ -16,14 +16,14 @@ class Dialog : public QDialog
 public:
     explicit Dialog(QWidget *parent = 0);
     ~Dialog();
-
-private slots:
+    bool tarcza = true;
+    void paintEvent(QPaintEvent *e);
 
 
 private:
     Ui::Dialog *ui;
-    void paintEvent(QPaintEvent *e);
-    bool tarcza = false;
+
+
 };
 
 #endif // DIALOG_H

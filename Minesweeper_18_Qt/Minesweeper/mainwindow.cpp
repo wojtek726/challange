@@ -7,6 +7,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    this->setGeometry(700,300,350,290);
     srand (time(NULL));
     int j = 0, k = 0;
     for(int i = 0; i < 100; i++)

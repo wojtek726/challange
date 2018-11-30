@@ -6,8 +6,9 @@ Dialog::Dialog(QWidget *parent) :
     ui(new Ui::Dialog)
 {
     ui->setupUi(this);
-    tarcza = true;
-    setWindowTitle("Analog Clock");
+    this->setMinimumSize(500,500);
+    this->setMaximumSize(500,500);
+    this->setGeometry(700,300,500,500);
 }
 
 Dialog::~Dialog()
@@ -26,14 +27,4 @@ void Dialog::paintEvent(QPaintEvent *e)
         painter->setPen(*pen);
         painter->drawEllipse(0,0,500,500);
     }
-    else
-    {
-        QPainter *painter = new QPainter(this);
-        QPen *pen = new QPen(Qt::yellow);
-        pen->setWidth(4);
-        painter->setPen(*pen);
-        painter->drawEllipse(10,10,500,500);
-    }
-
 }
-
