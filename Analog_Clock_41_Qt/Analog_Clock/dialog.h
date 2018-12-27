@@ -20,7 +20,7 @@ public:
     ~Dialog();
     bool tarcza = true;
     bool wskazowka = true;
-    int licznik = 14;
+    //int licznik = 14;
     void paintEvent(QPaintEvent *e);
     void licz_punkty(int kat);
     void licz_kreski(int kat);
@@ -34,9 +34,9 @@ signals:
 
 
 private slots:
-    void on_pushButton_clicked();
-    void licznik_sekund();
-    void licznik_minut();
+    void licznik();
+//    void licznik_minut();
+//    void licznik_godzin();
 
 
 private:
