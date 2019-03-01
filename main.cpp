@@ -4,16 +4,30 @@
 
 using namespace std;
 
-string szyfruj(string doRozszyfrowania, int klucz)
+// string szyfruj(string doRozszyfrowania, char klucz[])
+// {
+//     //int klucz = 0b1010111101001001010;
+//     klucz[3] = {'K','E','Y'};
+//     string output = doRozszyfrowania;
+//     for (int i = 0; i < output.size(); i++)
+//     {
+//         output[i] = doRozszyfrowania[i] ^ klucz[i % (sizeof(klucz) / sizeof(char))];
+//     }
+//     return output;
+// }
+
+char szyfruj(char doRozszyfrowania, char klucz)
 {
     //int klucz = 0b1010111101001001010;
-    string output = doRozszyfrowania;
-    for (int i = 0; i < doRozszyfrowania.size(); i++)
-    {
-        output[i] = doRozszyfrowania[i] ^ klucz;
-    }
+    //char klucz = 'K';
+    char output = doRozszyfrowania;
+
+    
+    output = doRozszyfrowania ^ klucz;
+    
     return output;
 }
+
 
 int main(int argc, char *argv[])
 {
@@ -33,10 +47,16 @@ int main(int argc, char *argv[])
         outfile.open(file2);
 
         string str;
-        while (getline(infile, str))
+        char chr;
+        // while (getline(infile, str))
+        // {
+        //     //cout << str << endl;
+        //     outfile << szyfruj(str, argv[3]) << endl;
+        // }
+        char klucz = argv[3][0];
+        while(infile.get(chr))
         {
-            //cout << str << endl;
-            outfile << szyfruj(str, atoi(argv[3])) << endl;
+            outfile << szyfruj(chr,klucz);
         }
         cout << argc << endl;
         infile.close();
