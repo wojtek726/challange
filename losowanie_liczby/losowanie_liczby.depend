@@ -1,7 +1,0 @@
-# depslib dependency file v1.0
-1521412926 source:/home/wojtek/projekty/c/losowanie_liczby/main.cpp
-	<iostream>
-	<fstream>
-	<stdlib.h>
-	<time.h>
-
